@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Unit Conversion</title>
+</head>
+<body>
+  <div id="container">
+    <div class="top-container">
+        <div class="title">
+        <i>How much is it in Canada <img id="flag" src="ca.png" alt="Canadian flag" width="30" height="20"></i>?<br>
+        Metric and Imperial Unit Conversion
+        </div>
+        <div class="num">
+          <input type="number" id="number" style="width: 90px" placeholder="20"
+          oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+        </div>
+
+      </div>
+          <div class="bottom-container">
+                <div class="length">
+                <span style="color: grey">
+                Length</span> (Meter to Feet)
+                <p id="mTof"></p>
+                </div>
+                <div class="volume">
+                  <span style="color: grey">
+                  Volume </span> (Liter to Gallon)
+                  <p id="lTog"></p>
+                  </div>
+                  <div class="mass">
+                    <span style="color: grey">
+                    Mass</span> (Kilogram to Pound)
+                    <p id="kTop"></p>
+                    </div>
+          </div>
+
+  </div>
+ 
+<script src="script.js"></script>
+</body>
+</html>
